@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="">
+    <title>拍拍网</title>
+    <style>
+        body,
+        div,
+        ul,
+        li,
+        a {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .nav_box {
+            width: 987px;
+            height: 32px;
+            background-color: #fff;
+            margin: 0 auto;
+            border-bottom: 3px solid #cc2424;
+            margin-top: 20px;
+        }
+
+        .nav_box .all a {
+            width: 170px;
+            height: 32px;
+            line-height: 32px;
+            display: block;
+            padding-left: 15px;
+            background-color: #cc2424;
+            color: #fff;
+            font-size: 14px;
+
+        }
+
+        .nav_box ul {
+            padding-left: 7px;
+            border-bottom: 2px solid #cc2424;
+        }
+
+        .nav_box ul li {
+            float: left;
+        }
+
+        .nav_box ul li a {
+
+            padding: 0 10px;
+            font-size: 12px;
+            display: block;
+            line-height: 32px;
+            height: 32px;
+            color: #000;
+        }
+
+        .nav_box ul li span {
+            margin: 0 7px;
+            font-size: 12px;
+            line-height: 30px;
+        }
+
+        .nav_box ul li.more {
+            margin-left: 9px;
+
+        }
+
+        .nav_box ul li.more i {
+            height: 0px;
+            width: 0px;
+            display: inline-block;
+            border: 3px solid transparent;
+            border-top-color: #000;
+        }
+
+        .nav_box ul li.more a {
+            padding: 0 10px;
+        }
+
+        .nav_box ul li a:hover {
+            background-color: red;
+        }
+
+        .nav_box ul .wear {
+            position: relative;
+        }
+
+        .nav_box ul .wear img {
+            position: absolute;
+            top: -8px;
+            left: 23px;
+        }
+
+        .nav_box ul .home {
+            position: relative;
+        }
+
+        .nav_box ul .home img {
+            position: absolute;
+            top: -11px;
+            left: 23px;
+        }
+
+        .bottom {
+            width: 185px;
+            background-color: #f04349;
+            display: none;
+        }
+
+        .bottom li {
+            font-size: 12px;
+            color: #fff;
+            line-height: 29px;
+        }
+
+        .bottom li img {
+            width: 16px;
+            height: 16px;
+            margin-left: 15px;
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+        .nav_box .all:hover .bottom{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_box">
+        <div class="fl all">
+            <a href="" class="all">全部商品分类</a>
+            <div class="bottom">
+                <li style="border-bottom: 1px dashed #fff;"><img src="./img/pp1.jpg" alt="">话费网游</li>
+                <li><img src="./img/pp2.jpg" alt="" style="height:13px;">男女服装</li>
+            </div>
+        </div>
+        <ul class="fl">
+            <li><a href="">女装</a></li>
+            <li class="wear"><a href="">男装</a><img src="./img/1.png" alt=""></li>
+            <li><a href="">数码</a></li>
+            <li><a href="">运动</a></li>
+            <li><a href="">美妆</a></li>
+            <li class="home"><a href="">家居</a><img src="./img/pp.png" alt=""></li>
+            <li><a href="">美食</a></li>
+            <li>
+                <span>|</span>
+            </li>
+            <li><a href="">充值</a></li>
+            <li><a href="">彩票</a></li>
+            <li><a href="">旅游</a></li>
+            <li><a href="">票务</a></li>
+            <li>
+                <span>|</span>
+            </li>
+
+            <li><a href="">今日特价</a></li>
+            <li><a href="">团购</a></li>
+            <li><a href="">特卖会</a></li>
+            <li>
+                <span>|</span>
+            </li>
+            <li class="more fl"><a href="">更多<i></i></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

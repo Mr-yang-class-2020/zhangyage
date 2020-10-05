@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>库巴</title>
+    <style>
+        body,
+        ul,
+        li,
+        div,
+        a {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav_box {
+            width: 720px;
+            display: flex;
+            background-image: linear-gradient(#fa7c03, #de4a04);
+            margin: 0 auto;
+        }
+
+        .nav_box li {
+            padding: 5px 25px;
+            line-height: 25px;
+            border-left: 1px solid #ef7204;
+            border-right: 1px solid #e55300;
+        }
+
+        .nav_box .all {
+            font-weight: bold;
+            border-radius: 3px 0 0 0;
+            font-size: 13px;
+            padding: 5px 50px;
+            line-height: 25px;
+            background-color: #fa7e02;
+            position: relative;
+        }
+
+        .nav_box .all .phone {
+            position: absolute;
+            background-color: #fffcf7;
+            top: 35px;
+            left: 0;
+            padding: 0 10px;
+            width: 155px;
+            display: none;
+            border-left: 2px solid #fc8002;
+            border-right: 2px solid #fc8002;
+        }
+
+        .nav_box .all:hover .phone {
+            display: block;
+        }
+
+        .nav_box .all .phone .big {
+            border-bottom: 1px solid #f6e8dd;
+        }
+
+        .nav_box .all .phone p {
+            padding: 10px 25px;
+            position: relative;
+            margin: 0;
+        }
+
+        .nav_box .all .phone p img {
+            position: absolute;
+            top: 18px;
+            right: 5px;
+        }
+
+        .nav_box .all .phone p .img {
+            position: absolute;
+            left: 10px;
+        }
+
+        .nav_box .all .phone p a {
+            color: black;
+        }
+
+        .nav_box .sy {
+            box-shadow: black 0px 10px 20px -5px inset;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_box">
+        <div class="all">
+            <a href="#">全部商品分类</a>
+            <div class="phone">
+                <p class="big"><img class="img" src="./img/d.png" alt=""><a href="#">大家电</a><img src="./img/yj.png"
+                        alt=""></p>
+                <p><img class="img" src="./img/d.png" alt=""><a href="#">手机、数码</a><img src="./img/yj.png" alt=""></p>
+            </div>
+        </div>
+        <li class="sy"><a href="#">首页</a></li>
+        <li><a href="#">抢购</a></li>
+        <li><a href="#">团购</a></li>
+        <li><a href="#">城市专区</a></li>
+        <li><a href="#">节能产品</a></li>
+    </div>
+</body>
+
+</html>

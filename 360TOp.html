@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360TOp</title>
+</head>
+<style>
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .nav {
+        width: 952px;
+        height: 34px;
+        background-color: black;
+        line-height: 34px;
+    }
+
+    .nav li a {
+        color: #efc43a;
+        padding: 0 15px;
+        font-size: 13px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #222222;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .nav li a:last-child{
+        position: relative;
+    }
+    .nav li a:last-child img{
+        position: absolute;
+        top: -3px;
+        left: 68px;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <li>
+            <span class="dropdown">
+                <a href="">首页</a>
+                <span class="dropdown-content">
+                    <h2 style="color: white;">Female Male</h2>
+                   <span style="color: #999999;">1111</span>
+                   <span style="margin-left: 10px;color: #999999;">1111</span>
+                   <br>
+                   <span style="color: #999999;">1111</span>
+                   <span style="margin-left: 10px;color: #999999;">1111</span>
+                </span>
+            </span>
+
+            <a href="">新品</a>
+            <a href="" style="margin-right:10px;">品牌</a>
+            <img src="./img/top.jpg" alt="">
+            <a href="" style="margin-left: 20px;">箱包</a>
+            <a href="">钟表</a>
+            <a href="">鞋服配饰</a>
+            <a href="">珠宝首饰</a>
+            <a href="">个护化妆</a>
+            <a href="" style="margin-right:10px;">品味生活</a>
+            <img src="./img/top.jpg" alt="">
+            <a href="" style="margin-left: 20px;">所有分类</a>
+            <a href="">TOP咨询 <img src="./img/top1.jpg" alt=""></a>
+        </li>
+    </div>
+</body>
+
+</html>

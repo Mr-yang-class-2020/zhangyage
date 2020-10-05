@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay</title>
+    <style>
+        /*重置属性*/
+        body,
+        div,
+        ul,
+        li,
+        input,
+        select {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        input,
+        select {
+            outline: none;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        /*正常样式*/
+
+        .header {
+            width: 758px;
+            height: 69px;
+            /* background-color:red; */
+            margin: 0 auto;
+        }
+
+        .header .search_box {
+            padding: 7px 10px;
+        }
+
+        .header .search_box input[type='text'] {
+            width: 364px;
+            padding-left: 5px;
+            border: 1px solid #dcdcdc;
+            height: 22px;
+        }
+
+        .header .search_box select {
+            width: 120px;
+            height: 24px;
+            border: 1px solid #dcdcdc;
+            margin-left: 8px;
+        }
+
+        .header .search_box input[type='button'] {
+            width: 60px;
+            height: 24px;
+            background-color: #9bcf01;
+            color: #fff;
+            border: none;
+            margin-left: 8px;
+        }
+
+        .header .search_box a {
+            margin-left: 8px;
+            line-height: 24px;
+            color: #6d6d6d;
+            font-size:15px;
+            cursor: help;
+            /*鼠标：帮助*/
+        }
+
+        .header .search_box:after {
+            content: "";
+            width: 100%;
+            height: 0;
+            display: block;
+            clear: both;
+        }
+
+        .header .nav_box {
+            background-image: url(img/bj_xian_02.png);
+            background-repeat: repeat-x;
+            padding-top: 2px;
+        }
+
+        .header .nav_box ul {
+            height: 28px;
+            line-height: 28px;
+            border: 1px solid #dcdcdc;
+            border-top: none;
+            border-right: none;
+            font-size: 14px;
+        }
+
+        .header .nav_box ul li {
+            float: left;
+            border-right: 1px solid black;
+        }
+
+        .header .nav_box ul li a {
+            color: #676767;
+            font-size: 14px;
+        }
+
+        .header .nav_box ul li span {
+            padding: 0 22px 0 21px;
+        }
+
+        .header .nav_box ul li a.house {
+            padding-left: 23px;
+            background: url(img/fangzi.png) no-repeat 15px center;
+        }
+
+        .header .nav_box ul li span.shop {
+            padding-right: 23px;
+            background: url(img/bj_xian_02.png) no-repeat right center;
+        }
+
+        .header .nav_box ul li a i {
+            padding-left: 29px;
+            float: right;
+            height: 28px;
+            background: url(img/hsj.jpg) no-repeat center center;
+        }
+
+        .header .nav_box ul li div.dis {
+            width: 100%;
+            height: 100px;
+            background: #666666;
+            color: white;
+            display: none;
+        }
+
+        .header .nav_box ul li:hover div.dis {
+            display: block;
+        }
+
+        .header .nav_box ul li a:hover {
+            color: #9cd400;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="search_box">
+            <input type="text" class="fl" value="" placeholder="eBay.....">
+            <select class="fl">
+                <option>全部内容</option>
+                <option>鞋子</option>
+                <option>衣服</option>
+                <option>啥也不是</option>
+            </select>
+            <input class="fl" type="button" value="搜索" />
+            <a class="fl" href="#">搜索帮助</a>
+        </div>
+        <div class="nav_box">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li><a href="#" class="house">
+                        <span>卖家中心</span>
+                        <i></i>
+                    </a>
+                    <div class="dis">
+                        别看，啥也没有
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="shop">
+                        <span>卖啥</span>
+                        <i></i>
+                    </a>
+                    <div class="dis">
+                        别看，啥也没有
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="shop">
+                        <span>外贸大学</span>
+                        <i></i>
+                    </a>
+                    <div class="dis">
+                        别看，啥也没有
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>物流仓储</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>社区</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span style="color:#0067d1;">企业全球直销</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

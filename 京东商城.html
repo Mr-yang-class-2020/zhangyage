@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东商城</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+        }
+        .nav_box{
+            width: 900px;
+            display: flex;                 
+            border-radius: 7px 0 0 0;
+            background-image: linear-gradient(#d60000, #b50102); 
+        }
+        .nav_box .all{
+            font-weight: bold;
+            font-size:13px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 7px 0 0 0;
+            padding-left: 20px;
+            padding-right: 70px;
+            line-height: 25px;
+            background-image: linear-gradient(#f90908, #c40002); 
+            position: relative;
+        }
+        .nav_box .all .yc{
+            position: absolute;
+            background-color: #fffcf7;
+            top:35px;
+            left:0;
+            padding:0 10px;
+            width: 146px;
+            display: none;
+            border-left: 2px solid #cc0001;
+            border-right: 2px solid #cc0001;
+        }
+        .nav_box .all:hover .yc{
+            display: block;
+        } 
+        .nav_box .all .yc .book{
+            border-bottom:1px solid #f6e8dd;
+        }
+        .nav_box .all .yc p{
+            padding:5px 20px;
+            position: relative;
+            margin:0;
+        }
+        .nav_box .all .yc p img{
+            position: absolute;
+            top:13px;
+            right:5px;
+        }
+        .nav_box .all .yc p .d{
+            position: absolute;
+            left:10px;
+        }
+        .nav_box .all .yc p a{
+            color: black;
+            font-size:12px;
+        }
+        .nav_box .sy{
+            box-shadow: black 0px 10px 20px -5px inset;
+        }
+        .nav_box li{
+            padding:5px 25px;
+            line-height: 25px;
+            border-left: 1px solid #c94e51;
+            border-right: 1px solid #a30100;
+        }
+        .nav_box .community{
+            border:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav_box">
+        <div class="all">
+            <a href="#">全部商品分类</a>
+            <div class="yc">
+                <p class="book"><img class="d" src="./img/jd.png" alt=""><a href="#">图书、电子书刊、音像</a><img src="./img/jd1.png" alt=""></p>
+                <p><img class="d" src="./img/jd.png" alt=""><a href="#">家用电器</a><img src="./img/jd1.png" alt=""></p>
+            </div>
+        </div>
+        <li class="sy"><a href="#">首页</a></li>
+        <li><a href="#">服装城</a></li>
+        <li><a href="#">日韩馆</a></li>
+        <li><a href="#">团购</a></li>
+        <li><a href="#">夺宝岛</a></li>
+        <li class="community"><a href="#">京东社区</a></li>
+    </div>
+</body>
+</html>

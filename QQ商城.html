@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ商城</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color:#fff; 
+        }
+        .nav_box{
+            width: 1000px;
+            display: flex;
+            background-color: #cc1108;
+            margin: 0 auto;
+        }
+        .nav_box li{
+            padding:6px 20px;
+        }
+        .nav_box .all{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 10px;
+            padding-right: 40px;
+            position: relative;
+        }
+        .nav_box .all .yc{
+            width: 160px;
+            left:0;
+            top:33px;
+            position: absolute;
+            background-color:#f8eee2;
+            border-left:1px solid #cdbda4;
+            border-right:1px solid #cdbda4;
+            font-size: 14px;
+            color: #501914;
+            display: none;
+        }
+        .nav_box .all .yc img{
+            position: absolute;
+            right:5px;
+            margin-top:5px;
+        }
+        .nav_box .all .yc a{
+            color: black;
+        }
+
+        .nav_box .sy{
+            background-color: #ab0c06;
+        }
+        .nav_box .sale{
+            position: relative;
+            margin-right:10px;
+        }
+        .nav_box .sale img{
+            position: absolute;
+            right:-8px;
+            top:8px;
+        }
+        .nav_box .list{
+            position: relative;
+            margin-right:10px;
+        }
+        .nav_box .list img{
+            position: absolute;
+            right:-8px;
+            top:8px;
+        }
+        .nav_box .coupon{
+            position: relative;
+            margin-right:10px;
+        }
+        .nav_box .coupon img{
+            position: absolute;
+            right:-8px;
+            top:8px;
+        }
+        .nav_box .all:hover .yc{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav_box">
+        <div class="all">
+            <a href="#">全部分类和品牌</a>
+            <div class="yc">
+                <li><a href="#">美容美妆</a><img src="./img/sc1.png" alt="" ></li>
+                <li><a href="#">品牌男装</a><img src="./img/sc1.png" alt=""></li>
+            </div>
+        </div>
+        <li class="sy"><a href="#">首页</a></li>
+        <li><a href="#">团购</a></li>
+        <li><a href="#">抢购</a></li>
+        <li><a href="#">包邮</a></li>
+        <li class="sale"><a href="#">特卖会</a><img src="./img/sc.png" alt=""></li>
+        <li><a href="#">新店</a></li>
+        <li><a href="#">新品</a></li>
+        <li class="list"><a href="#">排行榜</a><img src="./img/sc.png" alt=""></li>
+        <li class="coupon"><a href="#">优惠券</a><img src="./img/sc.png" alt=""></li>
+        <li><a href="#">主题导购 </a></li>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麦包包</title>
+</head>
+
+<body>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav {
+            width: 960px;
+            height: 36px;
+            background-color: red;
+            line-height: 37px;
+        }
+
+        .nav li a {
+            padding: 0 20px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+       
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+    </style>
+    <div class="nav">
+        <li>
+            <span class="dropdown">
+                <a href="" style="background-color: #b30004;color: white;padding: 7px 70px;">全部商品分类</a>
+                <span class="dropdown-content">
+                    <span> <img src="images/6.jpg" alt=""> 时尚女装 <img src="images/7.jpg" style="margin-left: 100px;" alt=""></span>
+                    <br>
+                    
+                    <a href="" style="font-size: 12px;padding: 0 6px;">新品</a>
+                    <a href="" style="font-size: 12px;padding: 0 6px;">真皮包</a>
+                    <a href="" style="font-size: 12px;padding: 0 6px;">钱包</a>
+                    <a href="" style="font-size: 12px;padding: 0 6px;">单肩包</a>
+                    <a href="" style="font-size: 12px;padding: 0 6px;">手提包</a>
+                    <a href="" style="font-size: 12px;padding: 0 6px;">斜挎包</a>
+                </span>
+            </span>
+
+            <a href=""
+                style="background-color: white;border: 1px solid red;padding: 7px 20px 6px 20px;margin-left: -6px;color:red;">首页</a>
+            <a href="" style="color: white;">逛</a>
+            <a href="" style="color: white;">选包</a>
+            <a href="" style="color: white;">晒包</a>
+            <a href=""><img src="images/5.jpg" style="float: right;" alt=""></a>
+        </li>
+    </div>
+</body>
+
+</html>

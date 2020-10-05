@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		body,
+		div,
+		ul,
+		li,
+		a {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.nav-box {
+			width: 990px;
+			height: 37px;
+			margin: 0 auto;
+			background-color: #4a4a4a;
+		}
+
+		.nav-box ul.fl li {
+			float: left;
+		}
+
+		.nav-box ul.fr li {
+			float: right;
+		}
+
+		.nav-box2 ul.fl li {
+			float: left;
+		}
+
+		.nav-box2 ul.fr li {
+			float: right;
+		}
+
+		.nav-box ul li a.sy {
+			width: 29px;
+			height: 37px;
+			padding-left: 52px;
+			padding-right: 25px;
+		}
+
+		.nav-box ul li a {
+			width: 38px;
+			height: 37px;
+			padding: 0 16px;
+			color: white;
+			line-height: 37px;
+			font-size: 14px;
+			position: relative;
+		}
+
+		.nav-box ul li .fl:after,
+		.nav-box ul li .fl:before {
+			content: "";
+			width: 0;
+			height: 0;
+			border: 5px solid transparent;
+			border-top-color: #878787;
+			display: block;
+			position: absolute;
+			right: 1px;
+			top: 7px;
+		}
+
+		.nav-box ul li .fl:after {
+			z-index: 10px;
+			border-top-color: rgba(79, 71, 78, 1);
+			top: 5px;
+		}
+
+		.nav-box ul li .fl:hover:before {
+			border-color: transparent;
+			border-bottom-color: #878787;
+			top: 3px;
+		}
+
+		.nav-box ul li .fl:hover:after {
+			border-color: transparent;
+			border-bottom-color: rgba(79, 71, 78, 1);
+		}
+
+		.zxdh {
+			width: 58px;
+			padding: 0 9px;
+		}
+
+		.vip {
+			width: 50px;
+			padding-left: 9px;
+			padding-right: 10px;
+		}
+
+		.ppg {
+			width: 43px;
+			padding-left: 9px;
+			padding-right: 27px;
+		}
+
+		.nav-box2 {
+			width: 990px;
+			height: 34px;
+			margin: 0 auto;
+			font-size: 12px;
+			background-color: #d95853;
+		}
+
+		.nav-box2 ul li a.xpdx {
+			margin-left: 13px;
+		}
+
+		.nav-box2 ul.a1 li a {
+			padding: 0 11px;
+			line-height: 36px;
+			color: white;
+		}
+
+		.nav-box2 .search {
+			width: 185px;
+			height: 12px;
+			border: 1px solid #6f6764;
+			border-radius: 15px;
+			border-left: none;
+			border-bottom: 1px solid #FFFFFF;
+			border-right: none;
+			background-color: #eaefeb;
+			margin: 6px 22px 7px 24px;
+			outline: none;
+			padding-left: 10px;
+			padding-top: 7px;
+			background-image: url(img/hlm1_03.png);
+			background-repeat:no-repeat;
+			background-position: right bottom;
+			float: left;
+		}
+
+		.nav-box2 ul li.bj {
+			width: 61px;
+			height: 20px;
+			margin-top: 7px;
+			background-image: url(img/hlm2_03.png);
+			background-repeat:no-repeat;
+			background-position-y:center;
+		}
+
+		.nav-box2 ul li.bg {
+			width: 101px;
+			height: 20px;
+			margin-top: 7px;
+			background-image: url(img/hlm3_03.png) ;
+			background-repeat:no-repeat;
+		}
+
+		.nav-box2 ul li a.qjs {
+			color: white;
+			font-size: 12px;
+			margin-left: 6px;
+			line-height: 20px;
+		}
+
+		.nav-box2 ul li a.gwc {
+			color: #798d68;
+			font-size: 12px;
+			margin-left: 23px;
+			line-height: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="nav-box">
+		<ul class="fl">
+			<li><a href="" class="sy">首页</a></li>
+			<li><a href="" class="fl">女鞋</a></li>
+			<li><a href="" class="fl">男鞋</a></li>
+			<li><a href="" class="fl">运动</a></li>
+			<li><a href="" class="fl">户外</a></li>
+			<li><a href="" class="fl">儿童</a></li>
+			<li><a href="" class="fl">服装</a></li>
+			<li><a href="" class="fl">包</a></li>
+			<li><a href="" class="fl">配件</a></li>
+		</ul>
+		<ul class="fr">
+			<li><a href="" class="ppg fr">品牌馆</a></li>
+			<li><a href="" class="vip fr">VIP专区</a></li>
+			<li><a href="" class="zxdh fr">最新到货</a></li>
+		</ul>
+	</div>
+	<div class="nav-box2">
+		<ul class="a1 fl">
+			<li><a href="" class="xpdx">新品单鞋</a></li>
+			<li><a href="">篮球鞋</a></li>
+			<li><a href="">足球鞋</a></li>
+			<li><a href="">帆船鞋</a></li>
+			<li><a href="">T恤</a></li>
+			<li><a href="">坡跟鞋</a></li>
+			<li><a href="">板鞋</a></li>
+			<li><a href="">空军一号</a></li>
+			<li><a href="">阿甘</a></li>
+			<li><a href="">牛仔裤</a></li>
+		</ul>
+		<input class="search" type="text" value="" placeholder="商店名称、品牌、编号" />
+		<ul class="a2 fr">
+			<li class="bj"><a href="" class="qjs fr">去结算 ></a></li>
+			<li class="bg"><a href="" class="gwc fr">购物车 0 件</a></li>
+		</ul>
+	</div>
+</body>
+
+</html>

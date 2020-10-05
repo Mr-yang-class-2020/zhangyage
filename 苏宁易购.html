@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苏宁易购</title>
+    <style>
+        body,
+        div,
+        ul,
+        li,
+        a {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav_box {
+            width: 1049px;
+            height: 34px;
+            background-color: #f8f8f8;
+            border-bottom: 2px solid #616161;
+            border-left: 2px solid #616161;
+            border-right: 1px solid #dedede;
+            margin: 0 auto;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .nav_box ul li {
+            float: left;
+        }
+
+        .nav_box .all a {
+            width: 190px;
+            height: 34px;
+            display: block;
+            line-height: 34px;
+            font-size: 14px;
+            padding-left: 12px;
+            color: #fff;
+            background-color: #6b6b6b;
+            position: relative;
+        }
+
+        .nav_box .all .activity{
+            width: 202px;
+            height:96px;
+            background-color: #213ca3;
+            display: none;
+            position: absolute;
+            top:37px;
+            left:114px;
+        }
+        .nav_box .all:hover .activity{
+            display: block;
+        }
+        .nav_box .all .activity span{
+            height:32px;
+            display: block;
+            line-height: 32px;
+            font-size:14px;
+            color: #fff;
+        }
+        .nav_box .all .activity span:first-child{
+            background-color: #dd301f;
+        }
+
+        .nav_box .all img {
+            float: right;
+            width: 20px;
+            margin: 7px 5px 5px 5px;
+        }
+
+        .nav_box .sns {
+            width: 661px;
+            height: 34px;
+        }
+
+        .nav_box .sns a {
+            display: block;
+            text-align: center;
+            line-height: 34px;
+            color: #2b2b2b;
+            font-size: 14px;
+        }
+
+        .nav_box .bala {
+            width: 183px;
+            height: 26px;
+            border-top: 1px solid #dedede;
+            border-bottom: 1px solid #dedede;
+            margin: 3px 3px 3px 0;
+            border-radius: 8px;
+        }
+
+        .nav_box .bala .l {
+            width: 95px;
+            position: relative;
+        }
+
+        .nav_box .bala .l img {
+            width: 20px;
+            height: 15px;
+            margin-top: 5px;
+            margin-left: 3px;
+        }
+
+        .nav_box .bala .l a {
+            margin-right: 15px;
+            width: 34px;
+            font-size: 12px;
+            color: #f86900;
+            line-height: 26px;
+            display: block;
+            float: right;
+        }
+
+        .nav_box .bala .l .hsj {
+            width: 5px;
+            height: 5px;
+            margin: 0;
+            float: right;
+            position: absolute;
+            right: 17px;
+            top: 44%;
+        }
+
+        .nav_box .bala .a {
+            width: 69px;
+            height: 26px;
+            background-color: #ff7c24;
+            color: #fff;
+            font-size: 14px;
+            padding-left: 16px;
+            line-height: 26px;
+            border-radius: 5px;
+        }
+
+        .nav_box .bala .a img {
+            float: right;
+            margin-top: 10px;
+            margin-right: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_box">
+        <div class="all fl">
+            <a href="#">全部商品分类<img src="./img/jh.jpg" alt=""></a>
+
+            <div class="activity">
+                <span>优惠活动</span>
+                <span>手机、数码</span>
+                <span>电脑、办公</span>
+            </div>
+        </div>
+        <ul class="sns fl">
+            <li><a href="#" style="width:61px;">首页</a></li>
+            <li><a href="#" style="width:108px;">品牌旗舰店</a></li>
+            <li><a href="#" style="width:91px;">城市专区</a></li>
+            <li><a href="#" style="width:93px;">生活助手</a></li>
+            <li><a href="#" style="width:61px;">旅行</a></li>
+            <li><a href="#" style="width:93px;">服务易栈</a></li>
+            <li><a href="#" style="width:91px;">积分商城</a></li>
+            <li><a href="#" style="width:63px;">社区</a></li>
+        </ul>
+        <ul class="bala fr">
+            <li class="l">
+                <img src="./img/shop1.jpg" alt="">
+                <a href="#">0<span style="color: #646661;">件</span></a>
+                <img src="./img/hsj.jpg" alt="" class="hsj">
+            </li>
+            <li class="a">
+                去结算
+                <img src="./img/ssj.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

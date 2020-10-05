@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body,
+        div,
+        ul,
+        li,
+        a {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav_box {
+            width: 986px;
+            height: 30px;
+            background-color: #317ee8;
+            margin: 0 auto;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .nav_box ul li {
+            float: left;
+        }
+
+        .nav_box .all a {
+            width: 200px;
+            height: 30px;
+            display: block;
+            line-height: 30px;
+            background-color: #317ee8;
+            color: #FFFFFF;
+            font-size: 14px;
+            margin-left: 15px;
+            position: relative;
+        }
+
+        .nav_box .all a .round {
+            width: 17px;
+            height: 17px;
+            background-color: #fff;
+            /* margin: 500px auto; */
+            border-radius: 50%;
+            position: absolute;
+            top: 19%;
+            right: 0;
+
+        }
+
+        .nav_box .all a .round::before,
+        .round::after {
+            /*在内容之前*/
+            /*在内容之后*/
+            content: "";
+            border: 5px solid transparent;
+            width: 0;
+            display: block;
+            border-left-color: blue;
+            position: absolute;
+            top: 52%;
+            left: 49%;
+            transform: translate(-15%, -50%);
+        }
+
+        .nav_box .all a .round::after {
+            transform: translate(-30%, -50%);
+            border-left-color: #fff;
+        }
+
+        .nav_box ul li a {
+            padding: 0 30px;
+            font-size: 14px;
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+
+        .nav_box ul li a:hover {
+            background-color: #ffb901;
+            color: #FFFFFF;
+
+        }
+
+        .htc {
+            width: 200px;
+            height: 64px;
+            background-color: #317ee8;
+            position: absolute;
+            top: 31px;
+            left: 147px;
+            display: none;
+        }
+        
+        .nav_box .all:hover .htc{
+            display: block;
+        }
+
+        .htc li {
+            height: 32px;
+        }
+
+        .htc li span {
+            color: white;
+            font-size: 12px;
+            line-height: 32px;
+            margin-left: 13px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav_box">
+        <div class="all fl">
+            <a href="#">全部商品分类<div class="round"></div></a>
+
+            <div class="htc">
+                <li>
+                    <span style="font-size: 14px;">手机/配件</span>
+                    <!-- <img src="./img/jt.png" alt=""> -->
+                </li>
+                <li>
+                    <span>三星&nbsp;&nbsp;索尼&nbsp;&nbsp;HTC</span>
+                </li>
+            </div>
+        </div>
+        <ul class="fl">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">qq网购</a></li>
+            <li><a href="#">装机宝</a></li>
+            <li><a href="#">早市</a></li>
+            <li><a href="#">天黑黑</a></li>
+            <li><a href="#">二手特卖</a></li>
+            <li><a href="#">团购</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

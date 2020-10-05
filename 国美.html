@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国美</title>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav_box {
+            width: 500px;
+            display: flex;
+            border-bottom: 2px solid #c70304;
+            margin: 0 auto;
+        }
+
+        .nav_box .sy{
+            padding:5px 15px;
+            margin-left:5px;
+            background-color: #cc0001;
+            position: relative;
+        }
+        .nav_box .sy a{
+            color: #fff;
+        }
+        .nav_box .sy .all{
+            background-color:#fcdcad;
+            position: absolute;
+            top:33px;
+            width: 210px;
+            display: none;
+            left:-5px;
+            border-left:1px solid #f8bb8f;
+            border-right:1px solid #f8bb8f;
+        }
+        .nav_box .sy:hover .all{
+            display: block;
+        }
+
+        .nav_box .sy .all .shop{
+            color: #c90035;
+            display: block;
+            padding:5px;
+            font-size: 14px;
+        }
+        .nav_box .sy .all li{
+            font-size: 14px;
+            line-height:33px;
+            background-color: #fff;
+            border-bottom: 1px solid #efdec2;
+        }
+        .nav_box .sy .all li span{
+            font-size: 12px;
+            float: right;
+        }
+        .nav_box .sy .all li a{
+            color: #000;
+        }
+
+        .nav_box li{
+            padding:5px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_box">
+        <div class="sy">
+            <a href="#">首页</a>
+            <div class="all">
+                <a href="#" class="shop">全部商品分类</a>
+                <li>
+                    <img src="./img/gm.jpg" alt="">
+                    <a href="#">家居/日用</a> 
+                    <img src="./img/jd1.png" alt="" style="float: right;margin-top:10px;">
+                    <span style="color: #f10222;">拒绝虚假</span>
+                </li>
+                <li>
+                    <img src="./img/gm1.jpg" alt="">
+                    <a href="#">手机/数码</a> 
+                    <img src="./img/jd1.png" alt="" style="float: right;margin-top:10px;">
+                    <span style="color: #3067db;">MID疯抢</span>
+                </li>
+                <!-- <img src="./img/1.png" alt=""> -->
+            </div>
+        </div>
+        <li><a href="#">促销专区</a></li>
+        <li><a href="#">团购</a></li>
+        <li><a href="#">限时抢购</a></li>
+        <li><a href="#">套购专区</a></li>
+        <li><a href="#">排行榜</a></li>
+    </div>
+</body>
+
+</html>

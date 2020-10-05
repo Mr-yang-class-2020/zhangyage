@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亚马逊</title>
+    <style>
+        body,
+        div,
+        ul,
+        li,
+        a,
+        select,
+        input {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .header {
+            width: 816px;
+            height: 38px;
+            background-color: #156db4;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin: 0 auto;
+        }
+
+        .header .all a {
+            width: 170px;
+            height: 32px;
+            margin-top: 4px;
+            margin-left: 3px;
+            display: block;
+            background-image: linear-gradient(to bottom, #fabf7b, #ed7a0d 100%);
+            border: 0 solid;
+            border-radius: 5px;
+            color: white;
+            background-repeat: no-repeat;
+            line-height: 28px;
+            font-size: 12px;
+            color: #FFFFFF;
+            padding-left: 6px;
+            position: relative;
+        }
+
+
+        .header .all .aaa {
+            width: 177px;
+            height: 48px;
+            position: absolute;
+            top: 11%;
+            left: 234px;
+            display: none;
+        }
+
+        .header .all:hover .aaa {
+            display: block;
+        }
+
+        .aaa li {
+            height: 36px;
+            border-bottom: 1px solid blue;
+        }
+
+        .aaa li span {
+            color: #000;
+            font-size: 14px;
+            float: left;
+            line-height: 36px;
+        }
+
+        .aaa li img{
+            width: 10px;
+            height: 10px;
+            float: right;
+            margin-top: 8%;
+            margin-right: 2%;
+        }
+
+
+        .search_box span {
+            color: #FFFFFF;
+            margin: 0 14px;
+            line-height: 38px;
+            font-size: 12px;
+        }
+
+        .search_box select {
+            margin: 9px 5px 0 12px;
+            width: 100px;
+        }
+
+        .search_box .text {
+            width: 221px;
+            height: 20px;
+            border: 1px solid #ababb7;
+            border-right: none;
+            margin-top: 8px;
+            outline: none;
+        }
+
+        .search_box input[type="button"] {
+            width: 46px;
+            height: 24px;
+            margin-top: 7px;
+            margin-left: 7px;
+            background-image: linear-gradient(to bottom, #fabf7b, #ed7a0d 100%);
+            border: 0 solid;
+            border-radius: 5px;
+            color: white;
+            outline: none;
+        }
+
+        .header .shop {
+            width: 100px;
+            height: 28px;
+            color: #FFFFFF;
+            margin: 5px 5px 0 3px;
+            float: left;
+            /* background-image: url(img/shop.gif); */
+            font-size: 15px;
+            background-image: linear-gradient(to bottom, #5d9bc4, #00529e 100%);
+            border: 0 solid #025587;
+            border-radius: 8px;
+        }
+
+        .header .shop span {
+            line-height: 28px;
+            display: block;
+            float: right;
+            padding-right: 10px;
+        }
+
+        .header .shop img {
+            width: 26px;
+            height: 20px;
+            margin: 5px 0 0 10px;
+        }
+
+        .header .wish {
+            width: 70px;
+            height: 31px;
+            margin: 3px 6px 0 0;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            font-size: 15px;
+            background-image: linear-gradient(#679bcb, #064f9c);
+            border: 0 solid #025587;
+            border-radius: 15%;
+            /* background-image: url(img/wish.gif);
+            background-repeat: no-repeat; */
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="all fl">
+            <a href="#">全部商品分类</a>
+            <div class="aaa">
+                <li>
+                    <span>图书</span>
+                    <img src="./img/jt.png" alt="">
+                </li>
+                <li>
+                    <span>影视、音乐</span>
+                    <img src="./img/jt.png" alt="">
+                </li>
+            </div>
+        </div>
+
+        <div class="search_box fl">
+            <span class="fl">搜索</span>
+            <select class="fl">
+                <option>全部分类</option>
+                <option>衣服</option>
+                <option>裤子</option>
+                <option>鞋</option>
+            </select>
+            <input class="text fl" type="text" value="" placeholder="请输入搜索关键字">
+            <input class="fl" type="button" value="搜索" onclick="alert('搜什么，什么也没有')">
+        </div>
+        <div class="fr">
+            <a class="shop" href="#"><img src="./img/car.jpg" alt=""><span>购物车</span></a>
+            <a class="wish" href="#">心愿单</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
